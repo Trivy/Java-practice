@@ -13,4 +13,8 @@ public class BarreDeToit implements Option, Serializable {
 	public double getPrix(){
 		return this.prix;
 	}
+	
+	public String toString(){
+		return "Barre de toit ("+this.prix+" €)";
+	}
 }

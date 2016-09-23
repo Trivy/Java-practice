@@ -15,6 +15,6 @@ public class SiegeChauffant implements Option, Serializable {
 	}
 
 	public String toString(){
-		return "Sièges chauffant, prix "+this.prix;
+		return "Sièges chauffants ("+this.prix+" €)";
 	}
 }

@@ -12,13 +12,15 @@ public class Vehicule implements Serializable{
 	
 	public String toString(){
 		String output= "";
-		output += "Mon nom est "+this.nom;
-		output += "\nMa marque est "+this.nomMarque;
-		output += "\nMon prix est "+this.prix;
-		output += "\nJ'ai "+options.size()+ " option(s) :";
-		for (int i=0; i< options.size(); i++){
-			output += "\n\t_ "+options.get(i).toString();
+		output += "Voiture "+this.nomMarque+" : "+this.nom+" "+this.moteur.toString();
+		if (options.size()>0){
+			output += " [";
+			for (int i=0; i< options.size()-1; i++){
+				output += options.get(i).toString()+", ";
+			}
+			output += options.get(options.size()-1).toString()+"]";
 		}
+		output += " d'une valeur totale de "+this.getPrix()+" €";
 		return output;
 	}
 	
@@ -35,7 +37,12 @@ public class Vehicule implements Serializable{
 	}
 	
 	Double getPrix(){
-		return prix;
+		double prixTotal=this.prix;
+		for (Option opt:options){
+			prixTotal+=opt.getPrix();
+		}
+		prixTotal+=this.moteur.getPrix();
+		return prixTotal;
 	}
 	
 	void setMoteur(Moteur mot){

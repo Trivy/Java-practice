@@ -14,6 +14,6 @@ public class VitreElectrique implements Option, Serializable {
 	}
 	
 	public String toString(){
-		return "Vitres électriques, prix "+this.prix;
+		return "Vitres électriques ("+this.prix+" €)";
 	}
 }

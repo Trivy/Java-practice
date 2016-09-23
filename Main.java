@@ -13,7 +13,7 @@ public class Main {
       	 lag1.addOption(new VitreElectrique());
       	 garage.addVoiture(lag1);
 
-      	 /*
+      	 
       	 Vehicule A300B_2 = new A300B();
       	 A300B_2.setMoteur(new MoteurElectrique("1500 W", 1234d));
       	 A300B_2.addOption(new Climatisation());
@@ -27,13 +27,13 @@ public class Main {
       	 d4_1.addOption(new Climatisation());
       	 d4_1.addOption(new GPS());
       	 garage.addVoiture(d4_1);   	 
-      	 */
+      	 
       	 
       	 Vehicule lag2 = new Lagouna();
       	 lag2.setMoteur(new MoteurDiesel("500 Hdi", 456987d));
       	 garage.addVoiture(lag2);
       	 
-      	 /*
+      	 
       	 Vehicule A300B_1 = new A300B();
       	 A300B_1.setMoteur(new MoteurHybride("ESSENCE/Electrique", 12345.95d));
       	 A300B_1.addOption(new VitreElectrique());
@@ -48,10 +48,10 @@ public class Main {
       	 d4_2.addOption(new GPS());
       	 d4_2.addOption(new VitreElectrique());
       	 garage.addVoiture(d4_2);   
-      	 */
       	 
-      	 System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
-      	 System.out.println(garage);
+      	 
+      	 //System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+      	 //System.out.println(garage);
        }
 
 }

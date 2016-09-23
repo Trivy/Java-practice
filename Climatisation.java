@@ -12,4 +12,8 @@ public class Climatisation implements Serializable, Option {
 	public double getPrix(){
 		return this.prix;
 	}
+	
+	public String toString(){
+		return "Climatisation ("+this.prix+" €)";
+	}
 }

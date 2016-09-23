@@ -22,6 +22,6 @@ public abstract class Moteur implements Serializable{
 	}
 	
 	public String toString(){
-		return "Moteur de type "+type.toString()+", cylindre "+cylindre;
+		return "Moteur "+type.toString()+" "+cylindre+" ("+prix+" €)";
 	}
 }

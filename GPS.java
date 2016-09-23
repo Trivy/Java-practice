@@ -14,6 +14,6 @@ public class GPS implements Option,Serializable{
 	}
 	
 	public String toString(){
-		return "GPS, prix "+this.prix;
+		return "GPS ("+this.prix+" €)";
 	}
 }

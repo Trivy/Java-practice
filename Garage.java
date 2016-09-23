@@ -36,6 +36,7 @@ public class Garage implements Serializable{
 	        	
 	    } catch (FileNotFoundException e) {
 	      System.out.println("Pas de fichier trouvé !\nNom recherché : "+nomFichier+"\nOn part d'une liste vide...");
+	      System.out.println("Aucune voiture sauvegardée !");
 	      this.voitures=new LinkedList<Vehicule>(); 
 	    } catch (IOException e) {
 	      e.printStackTrace();
@@ -69,10 +70,12 @@ public class Garage implements Serializable{
 	}
 	
 	public String toString(){
-		String str = "Il s'agit d'un garage avec "+voitures.size()+" véhicules, à savoir :";
+		String str = "";
+		str+="****************************\n";
+		str+="*  Garage de l'impossible  *\n";
+		str+="****************************\n";
 		for (Vehicule voit : voitures){
-			str+="\n";
-			str+="\n\t (*) "+voit.toString();
+			str+="+ "+voit.toString()+"\n";
 		}
 		return str;
 	}
