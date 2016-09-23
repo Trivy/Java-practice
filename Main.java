@@ -48,7 +48,10 @@ public class Main {
       	 d4_2.addOption(new GPS());
       	 d4_2.addOption(new VitreElectrique());
       	 garage.addVoiture(d4_2);   
-      	 */			 
+      	 */
+      	 
+      	 System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+      	 System.out.println(garage);
        }
 
 }

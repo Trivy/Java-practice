@@ -25,16 +25,14 @@ public class Garage implements Serializable{
 	              new BufferedInputStream(
 	                new FileInputStream(
 	                  new File(nomFichier))));
-	      
-	      ois.close();
 	            
 	      try {
 	        voitures = (List<Vehicule>)ois.readObject();
 	      } catch (ClassNotFoundException e) {
 	        e.printStackTrace();
 	      }
-		
-
+		  
+	    ois.close();
 	        	
 	    } catch (FileNotFoundException e) {
 	      System.out.println("Pas de fichier trouvé !\nNom recherché : "+nomFichier+"\nOn part d'une liste vide...");
@@ -73,7 +71,8 @@ public class Garage implements Serializable{
 	public String toString(){
 		String str = "Il s'agit d'un garage avec "+voitures.size()+" véhicules, à savoir :";
 		for (Vehicule voit : voitures){
-			str+="\n"+voit.toString();
+			str+="\n";
+			str+="\n\t (*) "+voit.toString();
 		}
 		return str;
 	}

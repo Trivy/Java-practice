@@ -15,9 +15,9 @@ public class Vehicule implements Serializable{
 		output += "Mon nom est "+this.nom;
 		output += "\nMa marque est "+this.nomMarque;
 		output += "\nMon prix est "+this.prix;
-		output += "\nJ'ai "+options.size()+ "option(s) :";
+		output += "\nJ'ai "+options.size()+ " option(s) :";
 		for (int i=0; i< options.size(); i++){
-			output += "\n"+options.get(i).toString();
+			output += "\n\t_ "+options.get(i).toString();
 		}
 		return output;
 	}
