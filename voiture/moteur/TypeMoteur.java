@@ -1,0 +1,5 @@
+package voiture.moteur;
+
+public enum TypeMoteur {
+	DIESEL, ESSENCE, HYBRIDE, ELECTRIQUE;
+}
