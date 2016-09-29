@@ -7,11 +7,11 @@ import voiture.moteur.Moteur;
 import voiture.option.Option;
 
 public class Vehicule implements Serializable{
-	Double prix;
-	String nom;
-	List<Option> options;
-	Marque nomMarque;
-	Moteur moteur;
+	protected Double prix;
+	protected String nom;
+	protected List<Option> options;
+	protected Marque nomMarque;
+	protected Moteur moteur;
 	
 	public String toString(){
 		String output= "";

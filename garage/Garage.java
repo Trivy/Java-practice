@@ -16,8 +16,8 @@ import java.util.List;
 import voiture.Vehicule;
 
 public class Garage implements Serializable{
-	List<Vehicule> voitures;
-	static String nomFichier="garage.txt";
+	private List<Vehicule> voitures;
+	private static String nomFichier="garage.txt";
 	
 	public Garage(){
 	    ObjectInputStream ois;

@@ -3,7 +3,7 @@ package voiture.option;
 import java.io.Serializable;
 
 public class VitreElectrique implements Option, Serializable {
-	double prix;
+	private double prix;
 
 	public VitreElectrique() {
 		prix = 350d;

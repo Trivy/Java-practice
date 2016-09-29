@@ -3,7 +3,7 @@ package voiture.option;
 import java.io.Serializable;
 
 public class BarreDeToit implements Option, Serializable {
-	double prix;
+	private double prix;
 
 	public BarreDeToit() {
 		// TODO Auto-generated constructor stub

@@ -3,7 +3,7 @@ package voiture.option;
 import java.io.Serializable;
 
 public class SiegeChauffant implements Option, Serializable {
-	double prix;
+	private double prix;
 
 	public SiegeChauffant() {
 		// TODO Auto-generated constructor stub

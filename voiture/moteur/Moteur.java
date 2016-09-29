@@ -3,9 +3,9 @@ package voiture.moteur;
 import java.io.Serializable;
 
 public abstract class Moteur implements Serializable{
-	TypeMoteur type;
-	String cylindre;
-	double prix;
+	protected TypeMoteur type;
+	protected String cylindre;
+	protected double prix;
 	
 	public double getPrix(){
 		return prix;

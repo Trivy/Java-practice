@@ -3,7 +3,7 @@ package voiture.option;
 import java.io.Serializable;
 
 public class GPS implements Option,Serializable{
-	double prix;
+	private double prix;
 	
 	public GPS(){
 		this.prix=300d;
