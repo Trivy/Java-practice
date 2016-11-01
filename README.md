@@ -1,2 +1,2 @@
 # Java-practice
-A repository with my first codes for Java. See also "GestionSuivi".
+A repository with my first codes for Java. See also "GestionSuivi" and "TestRequetes".
